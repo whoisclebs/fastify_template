@@ -2,10 +2,11 @@
 	"compilerOptions": {
 		"outDir": "dist",
 		"rootDir": "src",
+		"lib": ["ES2022"],
 		"target": "ES2022",
 		"module": "CommonJS",
 		"sourceMap": true,
-		"skipLibCheck": false,
+		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true,
 		"strict": true,
 		"moduleResolution": "node",
