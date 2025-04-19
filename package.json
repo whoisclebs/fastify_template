@@ -18,7 +18,7 @@
 	"license": "MIT",
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@commitlint/cli": "^17.1.2",
+		"@commitlint/cli": "^19.8.0",
 		"@commitlint/config-conventional": "^17.1.0",
 		"@types/jest": "^29.5.14",
 		"@types/node": "^18.19.86",
