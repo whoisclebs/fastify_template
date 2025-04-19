@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"main": "src/main/index.js",
 	"scripts": {
-		"build": "tsc",
+		"build": "tsup",
 		"lint": "biome check .",
 		"lint:fix": "biome format . --write",
 		"test": "jest --passWithNoTests --no-cache --runInBand",
@@ -13,7 +13,7 @@
 		"prepare": "husky install && chmod ug+x .husky/*",
 		"commit:lint": "commitlint --edit"
 	},
-	"keywords": ["typescript"],
+	"keywords": ["typescript", "fastify", "template"],
 	"author": "whoisclebs",
 	"license": "MIT",
 	"devDependencies": {
@@ -26,6 +26,7 @@
 		"jest": "^29.1.2",
 		"lint-staged": "^11.1.2",
 		"ts-jest": "^29.0.3",
+		"tsup": "^8.4.0",
 		"typescript": "^4.8.4"
 	},
 	"dependencies": {
