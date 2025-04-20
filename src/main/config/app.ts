@@ -4,5 +4,6 @@ export const setupApp = async (): Promise<FastifyInstance> => {
 	app.register(import("@/main/plugins/helmet"));
 	app.register(import("@/main/plugins/cors"));
 	app.register(import("@/main/plugins/rate-limit"));
+	app.register(import("@/main/plugins/compress"));
 	return app;
 };
