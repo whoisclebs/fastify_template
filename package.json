@@ -12,13 +12,9 @@
 		"test:staged": "npm test -- --findRelatedTests",
 		"prepare": "husky install && chmod ug+x .husky/*",
 		"commit:lint": "commitlint --edit",
-		"start": "tsup src/main/index.ts --format cjs,esm --dts --out-dir dist --clean --watch --onSuccess \"node dist/index.js\""
+		"start": "tsup src/main/index.ts --format cjs,esm --dts --clean --watch --onSuccess \"node build/index.js\""
 	},
-	"keywords": [
-		"typescript",
-		"fastify",
-		"template"
-	],
+	"keywords": ["typescript", "fastify", "template"],
 	"author": "whoisclebs",
 	"license": "MIT",
 	"devDependencies": {
@@ -43,6 +39,7 @@
 		"fastify": "^5.3.2",
 		"fastify-plugin": "^5.0.1",
 		"pino": "^9.6.0",
-		"ts-node": "^10.9.1"
+		"ts-node": "^10.9.1",
+		"zod": "^3.24.3"
 	}
 }
