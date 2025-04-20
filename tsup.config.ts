@@ -7,7 +7,8 @@ export default defineConfig({
 	sourcemap: true,
 	clean: true,
 	dts: true,
-	minify: false,
+	minify: true,
 	target: "esnext",
+	splitting: true,
 	tsconfig: "tsconfig.json",
 });
