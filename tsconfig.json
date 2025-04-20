@@ -2,8 +2,8 @@
 	"compilerOptions": {
 		"outDir": "dist",
 		"rootDir": "src",
-		"lib": ["es2024"],
-		"target": "es2024",
+		"lib": ["esnext"],
+		"target": "esnext",
 		"module": "CommonJS",
 		"sourceMap": true,
 		"skipLibCheck": true,

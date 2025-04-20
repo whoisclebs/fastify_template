@@ -1,7 +1,7 @@
 {
 	"name": "fastify_template",
 	"version": "0.0.1",
-	"main": "src/main/index.js",
+	"main": "src/main/index.ts",
 	"scripts": {
 		"build": "tsup",
 		"lint": "biome check .",
@@ -11,9 +11,14 @@
 		"test:watch": "npm test -- --watch",
 		"test:staged": "npm test -- --findRelatedTests",
 		"prepare": "husky install && chmod ug+x .husky/*",
-		"commit:lint": "commitlint --edit"
+		"commit:lint": "commitlint --edit",
+		"start": "tsup src/main/index.ts --format cjs,esm --dts --out-dir dist --clean --watch --onSuccess \"node dist/index.js\""
 	},
-	"keywords": ["typescript", "fastify", "template"],
+	"keywords": [
+		"typescript",
+		"fastify",
+		"template"
+	],
 	"author": "whoisclebs",
 	"license": "MIT",
 	"devDependencies": {
@@ -30,6 +35,13 @@
 		"typescript": "^4.8.4"
 	},
 	"dependencies": {
+		"@fastify/cors": "^11.0.1",
+		"@fastify/helmet": "^13.0.1",
+		"@fastify/rate-limit": "^10.2.2",
+		"dotenv": "^16.5.0",
+		"fastify": "^5.3.2",
+		"fastify-plugin": "^5.0.1",
+		"pino": "^9.6.0",
 		"ts-node": "^10.9.1"
 	}
 }
